@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연세대학교 로고 예시</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    header {
+      text-align: left; 
+      background-color: #fff;
+      padding: 20px;      
+    }
+    header img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .notice-box {
+      margin: 20px;
+    }
+    .notice-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .box {
+      border: 2px solid #333;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .form-section {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .form-header h2 {
+      margin: 0;
+    }
+    .form-section hr {
+      margin: 10px 0;
+    }
+    .form-section table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .form-section th,
+    .form-section td {
+      padding: 8px;
+      vertical-align: middle;
+    }
+    .form-section th {
+      width: 150px; 
+      text-align: left;
+      white-space: nowrap;
+    }
+    .form-section td input[type="text"],
+    .form-section td input[type="email"],
+    .form-section td select {
+      width: 200px;
+      padding: 4px;
+    }
+    .form-section .radio-group {
+      margin-top: 10px;
+    }
+    .form-section .radio-group label {
+      margin-right: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="src/likelion_logo.png" alt="연세대학교 로고">
+  </header>
+  
+  <main>
+    <h1>연세대학교 멋쟁이사자처럼 13기 지원서</h1>
+    <p>내 아이디어를 내 손으로 구현해보고 싶다면 주목!</p>
+    <p><i>연세대학교 멋쟁이 사자처럼</i>에서 13기 아기사자를 모집합니다.</p>
+    <p>모집 교육을 통해 자신의 아이디어를 서비스로 구현하고 나아가 창업을 꿈꾸는 분들의 많은 지원 부탁드립니다.</p>
+    <hr>
+
+    <h2>1. 모집일정</h2>
+    <ul>
+      <li>서류 접수: 2/16(금) 09:00 - 2/23(금)</li>
+      <li>서류 전형 결과 발표: 2/26(월) 오후 (합격자 개별 공지)</li>
+      <li>면접 진행: 2/28(수) - 2/29(목)</li>
+      <li>최종 합격자 발표: 3/2(토) 오후 (합격자 개별 공지)</li>
+    </ul>
+
+    <h2>2. 문의사항</h2>
+    <ul>
+      <li>
+        오픈채팅: 
+        <a href="https://open.kakao.com/o/xxxxxx" target="_blank">바로가기</a>
+      </li>
+      <li>
+        인스타그램: 
+        <a href="https://open.kakao.com/o/xxxxxx" target="_blank">@likelion_yonsei</a>
+      </li>
+    </ul>
+    <p><b><u>서류 제출 기간을 꼭 확인하신 후 기한 내 제출 부탁드립니다.</u></b></p>
+
+    <form>
+        <fieldset>
+          <legend><b>지원자 정보</b></legend>
+          <table>
+            <tr>
+              <th><label for="name">이름</label></th>
+              <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+              <th><label for="studentId">학번</label></th>
+              <td><input type="text" id="studentId" name="studentId" required></td>
+            </tr>
+            <tr>
+                <th>생년월일</th>
+                <td>
+                  <input type="date" name="birthDate" required>
+                </td>
+            </tr>
+                <th>학년 및 학기</th>
+                <td>
+                  <select name="semester" required>
+                    <option value="1-1">1-1</option>
+                    <option value="1-2">1-2</option>
+                    <option value="2-1">2-1</option>
+                    <option value="2-2">2-2</option>
+                    <option value="3-1">3-1</option>
+                    <option value="3-2">3-2</option>
+                    <option value="4-1">4-1</option>
+                    <option value="4-2">4-2</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+              <th><label for="email">이메일</label></th>
+              <td>
+                <input type="email" id="email" name="email" required>
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="phone">휴대폰 번호</label></th>
+              <td><input type="text" id="phone" name="phone" required></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>지원 분야</legend>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="supportField" value="기획" required> 기획
+              </label><br>
+              <label>
+                <input type="radio" name="supportField" value="디자인"> 디자인
+              </label><br>
+              <label>
+                <input type="radio" name="supportField" value="백엔드"> 백엔드
+              </label><br>
+              <label>
+                <input type="radio" name="supportField" value="프론트엔드"> 프론트엔드
+              </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>문항</legend>
+            
+            <div class="question-item">
+              <label for="question1">1. 자기소개</label><br>
+              <textarea id="question1" name="question1" rows="4" style="width: 60%;"></textarea>
+            </div>
+          
+            <div class="question-item">
+              <label for="question2">2. 활동경험</label><br>
+              <textarea id="question2" name="question2" rows="4" style="width: 60%;"></textarea>
+            </div>
+
+            <div class="question-item">
+              <label for="question3">3. 만들고 싶은 서비스</label><br>
+              <textarea id="question3" name="question3" rows="4" style="width: 60%;" placeholder="당신의 창의력을 맘껏 뽐내주세요!"></textarea>
+            </div>
+
+            <div class="question-item">
+              <label for="question4">4. 코딩 경험이 얼마나? 시간은 얼마나 투자하셨나요?</label><br>
+              <textarea id="question4" name="question4" rows="2" style="width: 60%;"></textarea>
+            </div>
+
+            <div class="question-item">
+              <label for="portfolio">5. 포트폴리오가 있다면 첨부 부탁드립니다 (선택사항)</label><br>
+              <input type="file" id="portfolio" name="portfolio">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>비대면 면접 참석 가능 시간</legend>
+            <p>가능 시간을 모두 체크해주세요!</p>
+
+            <div style="margin-bottom: 10px;">
+              <strong>2/28</strong>
+              <label><input type="checkbox" name="availableTimes_228[]" value="10"> 10</label>
+              <label><input type="checkbox" name="availableTimes_228[]" value="11"> 11</label>
+              <label><input type="checkbox" name="availableTimes_228[]" value="12"> 12</label>
+              <label><input type="checkbox" name="availableTimes_228[]" value="13"> 13</label>
+              <label><input type="checkbox" name="availableTimes_228[]" value="14"> 14</label>
+              <label><input type="checkbox" name="availableTimes_228[]" value="15"> 15</label>
+            </div>
+          
+            <div style="margin-bottom: 20px;">
+              <strong>2/29</strong>
+              <label><input type="checkbox" name="availableTimes_229[]" value="10"> 10</label>
+              <label><input type="checkbox" name="availableTimes_229[]" value="11"> 11</label>
+              <label><input type="checkbox" name="availableTimes_229[]" value="12"> 12</label>
+              <label><input type="checkbox" name="availableTimes_229[]" value="13"> 13</label>
+              <label><input type="checkbox" name="availableTimes_229[]" value="14"> 14</label>
+              <label><input type="checkbox" name="availableTimes_229[]" value="15"> 15</label>
+            </div>
+          </fieldset>
+          <button type="submit">제출하기</button>
+          <button type="button">임시저장</button>
+    </form>
+    
+  </main>
+</body>
+</html>
